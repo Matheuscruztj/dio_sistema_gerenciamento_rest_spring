@@ -20,10 +20,22 @@ public class PersonUtils {
 
     public static PersonDTO createFakeDTO() {
         return PersonDTO.builder()
+                .id(PERSON_ID)
                 .firstName(FIRST_NAME)
                 .lastName(LAST_NAME)
                 .cpf(CPF_NUMBER)
-                .birthDate("04-04-2010")
+                .birthDate("01-10-2010")
+                .phones(Collections.singletonList(PhoneUtils.createFakeDTO()))
+                .build();
+    }
+
+    public static PersonDTO createFakeDTOEn() {
+        return PersonDTO.builder()
+                .id(PERSON_ID)
+                .firstName(FIRST_NAME)
+                .lastName(LAST_NAME)
+                .cpf(CPF_NUMBER)
+                .birthDate("2010-10-01")
                 .phones(Collections.singletonList(PhoneUtils.createFakeDTO()))
                 .build();
     }
