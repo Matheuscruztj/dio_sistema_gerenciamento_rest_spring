@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "8350a4b8-4c78-4299-b3af-d1f66d049140",
+		"name": "Sistema gerenciamento Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Teste\",\r\n    \"lastName\": \"Sobrenome-teste\",\r\n    \"cpf\": \"123.123.123-12\",\r\n    \"birthDate\": \"01-11-1920\",\r\n    \"phones\": [\r\n        {\r\n            \"type\": \"MOBILE\",\r\n            \"number\": \"(85)99999-9999\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Teste\",\r\n    \"lastName\": \"Sobrenome-teste\",\r\n    \"cpf\": \"123.123.123-12\",\r\n    \"birthDate\": \"01-11-1920\",\r\n    \"phones\": [\r\n        {\r\n            \"type\": \"MOBILE\",\r\n            \"number\": \"(85)99999-9999\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
